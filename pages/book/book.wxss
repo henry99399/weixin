@@ -1,0 +1,145 @@
+.head{
+  float: left;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20rpx 50rpx;
+}
+.cover{
+  float: left;
+  width: 30vw;
+  height: 40vw;
+  box-shadow: 0 0 5px #ddd;
+}
+.cover image{
+  width: 100%;
+  height: 100%;
+}
+.detail{
+  float: left;
+  width: calc(100% - 30vw);
+  box-sizing: border-box;
+  padding-left: 30rpx;
+}
+.detail .book_publisher{
+  font-size: 0.8rem;
+  color: #9c9c9c;
+  margin: 10rpx 0;
+}
+.detail .cat_name{
+  font-size: 0.8rem;
+  color: #9c9c9c;
+  margin: 10rpx 0;
+}
+.detail .price{
+  font-size: 0.8rem;
+  color: #f63;
+  margin: 10rpx 0;
+}
+.remark{
+  float: left;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 30rpx;
+  margin-top: 30rpx;
+  font-size: 0.8rem;
+  color: #7c7c7c;
+  /* text-indent: 2em;
+
+  line-height: 1rem;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-line-clamp:3;
+  word-wrap: break-word;
+  overflow: hidden;
+  -webkit-box-pack: center; */
+  /* max-height: 3rem; */
+}
+.actions{
+  float: left;
+  box-sizing: border-box;
+  text-align: center;
+  width: 100%;
+  padding: 30rpx 50rpx 0 50rpx;
+}
+.actions button{
+  width: 50%;
+  float: left;
+  font-size: 0.9rem;
+  background: #fff;
+}
+.actions button::after{
+  border: 0;
+}
+.actions button:first-child{
+  border: none;
+  color: #06d310;
+}
+.actions button:last-child{
+  border: none;
+  color: #f53d3d;
+}
+.mulu{
+  float: left;
+  width: 100%;
+  box-sizing: border-box;
+  border-bottom: 10px #f5f8fa solid;
+  padding: 0 30rpx;
+  margin-top: 30rpx;
+  border-top: 1px #eee solid;
+  line-height: 3rem;
+  font-size: 0.8rem;
+  color: #9f9f9f;
+}
+.mulu .link{
+  float: right;
+}
+.tj{
+  float: left;
+  width: 100%;
+}
+.tj .title{
+  line-height: 2rem;
+  padding: 0 30rpx;
+  float: left;
+  width: 100%;
+  box-sizing: border-box;
+}
+.tjList{
+  float: left;
+  width: 100%;
+  padding: 15rpx;
+  box-sizing: border-box;
+}
+.tjList .book{
+ float: left;
+ width: 33.3333%;
+ padding: 15rpx;
+ box-sizing: border-box; 
+}
+.book .cover{
+  float: left;
+  width: 100%;
+  height: 37vw;
+}
+.cover image{
+  width: 100%;
+  height: 100%;
+}
+.book text{
+  float: left;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 0.7rem;
+  line-height: 1rem;
+  color: #999;
+  height: 2.5rem;
+  overflow: hidden;
+  padding-top: 0.5rem;
+}
+
+button.end{
+  color: #999 !important;
+}

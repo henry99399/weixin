@@ -1,0 +1,19 @@
+<!--index.wxml-->
+<view class="container">
+  <view class='main'>
+    <view class='search' bindtap='tosearch'>
+      <icon type='search' size='15'></icon>
+      <label>输入你想看的书名</label>
+    </view>
+
+
+  <view class='shlef'>
+    <view class='book' wx:for="{{shlefData}}" wx:for-item="book" bindtap='lookBook' data-item='{{book}}'>
+      <image src='{{ctxPath + book.bk_cover}}'></image>
+    </view>
+    <view class='book' bindtap='addBook'><view class='bookAdd'>+</view></view>
+  </view>
+
+
+  </view>
+</view>

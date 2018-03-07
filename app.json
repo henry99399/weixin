@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/search/search",
+    "pages/city/city",
+    "pages/book/book",
+    "pages/chapter/chapter",
+    "pages/read/read",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "长江阅读",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color":"#8a8a8a",
+    "selectedColor":"#f53d3d",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "书架",
+        "iconPath": "pages/img/icon-shlef.png",
+        "selectedIconPath": "pages/img/icon-shlef-end.png"
+      },
+      {
+        "pagePath": "pages/city/city",
+        "text": "书城",
+        "iconPath": "pages/img/icon-home.png",
+        "selectedIconPath": "pages/img/icon-home-end.png"
+      },
+      {
+        "pagePath": "pages/search/search",
+        "text": "搜索",
+        "iconPath": "pages/img/icon-search.png",
+        "selectedIconPath": "pages/img/icon-search-end.png"
+      }
+    ]
+  }
+}

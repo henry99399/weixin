@@ -1,0 +1,155 @@
+<view>
+  <swiper class='advSwiper' indicator-dots='true' autoplay='true'>
+    <swiper-item wx:for="{{advList}}" wx:for-item="item">
+      <image src='{{ctxPath + item.adv_img}}'  data-item="{{item.adv_url}}" bindtap='advtobook'></image>
+    </swiper-item>
+  </swiper>
+  <view class='menuAction' wx:if="{{false}}">
+    <view class='menu-item'>
+      <view class='menu-item-label'>
+        <image src='../img/mm-1.png'></image>
+        <label>分类</label>
+      </view>
+    </view>
+    <view class='menu-item'>
+      <view class='menu-item-label'>
+        <image src='../img/mm-2.png'></image>
+        <label>排行</label>
+      </view>
+    </view>
+    <view class='menu-item'>
+      <view class='menu-item-label'>
+        <image src='../img/ico-nan.png'></image>
+        <label>男频</label>
+      </view>
+    </view>
+    <view class='menu-item'>
+      <view class='menu-item-label'>
+        <image src='../img/ico-nv.png'></image>
+        <label>女频</label>
+      </view>
+    </view>
+    <view class='menu-item'>
+      <view class='menu-item-label'>
+        <image src='../img/mm-11.png'></image>
+        <label>出版</label>
+      </view>
+    </view>
+  </view>
+
+
+  <view class='listModel'>
+    <view class='modelTitle'>
+      <label>小编推荐</label>
+      <label class='link'> 查看更多> </label>
+    </view>
+    <view class='modelbook'>
+      <view class='book' wx:for="{{data20001}}" wx:for-item="book" data-book="{{book}}" bindtap='tolookbook'>
+        <image wx:if='{{book.book_type == 1}}' src='{{book.book_cover}}' ></image>
+        <image wx:if='{{book.book_type == 2}}' src='{{ctxPath + book.book_cover}}'></image>
+        <label>{{book.book_name}}</label>
+      </view>
+    </view>
+  </view>
+
+  <view class='listModel'>
+    <view class='modelTitle'>
+      <label>总裁爱上我</label>
+      <label class='link'> 查看更多> </label>
+    </view>
+    <view class='modelbook'>
+      <view class='book' wx:for="{{data20002}}" wx:for-item="book" data-book="{{book}}" bindtap='tolookbook'>
+        <image wx:if='{{book.book_type == 1}}' src='{{book.book_cover}}' ></image>
+        <image wx:if='{{book.book_type == 2}}' src='{{ctxPath + book.book_cover}}'></image>
+        <label>{{book.book_name}}</label>
+      </view>
+    </view>
+  </view>
+
+  <view class='listModel'>
+    <view class='modelTitle'>
+      <label>王妃不好惹</label>
+      <label class='link'> 查看更多> </label>
+    </view>
+    <view class='modelbook'>
+      <view class='book' wx:for="{{data20003}}" wx:for-item="book" data-book="{{book}}" bindtap='tolookbook'>
+        <image wx:if='{{book.book_type == 1}}' src='{{book.book_cover}}' ></image>
+        <image wx:if='{{book.book_type == 2}}' src='{{ctxPath + book.book_cover}}'></image>
+        <label>{{book.book_name}}</label>
+      </view>
+    </view>
+  </view>
+
+  <view class='listModel'>
+    <view class='modelTitle'>
+      <label>异界当女王</label>
+      <label class='link'> 查看更多> </label>
+    </view>
+    <view class='modelbook'>
+      <view class='book' wx:for="{{data20004}}" wx:for-item="book" data-book="{{book}}" bindtap='tolookbook'>
+        <image wx:if='{{book.book_type == 1}}' src='{{book.book_cover}}' ></image>
+        <image wx:if='{{book.book_type == 2}}' src='{{ctxPath + book.book_cover}}'></image>
+        <label>{{book.book_name}}</label>
+      </view>
+    </view>
+  </view>
+
+  <view class='listModel'>
+    <view class='modelTitle'>
+      <label>兵王闯花都</label>
+      <label class='link'> 查看更多> </label>
+    </view>
+    <view class='modelbook'>
+      <view class='book' wx:for="{{data20005}}" wx:for-item="book" data-book="{{book}}" bindtap='tolookbook'>
+        <image wx:if='{{book.book_type == 1}}' src='{{book.book_cover}}' ></image>
+        <image wx:if='{{book.book_type == 2}}' src='{{ctxPath + book.book_cover}}'></image>
+        <label>{{book.book_name}}</label>
+      </view>
+    </view>
+  </view>
+
+
+  <view class='listModel'>
+    <view class='modelTitle'>
+      <label>废材逆袭流</label>
+      <label class='link'> 查看更多> </label>
+    </view>
+    <view class='modelbook'>
+      <view class='book' wx:for="{{data20006}}" wx:for-item="book" data-book="{{book}}" bindtap='tolookbook'>
+        <image wx:if='{{book.book_type == 1}}' src='{{book.book_cover}}' ></image>
+        <image wx:if='{{book.book_type == 2}}' src='{{ctxPath + book.book_cover}}'></image>
+        <label>{{book.book_name}}</label>
+      </view>
+    </view>
+  </view>
+  
+  <view class='listModel'>
+    <view class='modelTitle'>
+      <label>人鬼情未了</label>
+      <label class='link'> 查看更多> </label>
+    </view>
+    <view class='modelbook'>
+      <view class='book' wx:for="{{data20007}}" wx:for-item="book" data-book="{{book}}" bindtap='tolookbook'>
+        <image wx:if='{{book.book_type == 1}}' src='{{book.book_cover}}' ></image>
+        <image wx:if='{{book.book_type == 2}}' src='{{ctxPath + book.book_cover}}'></image>
+        <label>{{book.book_name}}</label>
+      </view>
+    </view>
+  </view>
+
+
+  <view class='listModel'>
+    <view class='modelTitle'>
+      <label>精选出版</label>
+      <label class='link'> 查看更多> </label>
+    </view>
+    <view class='modelbook'>
+      <view class='book' wx:for="{{data20008}}" wx:for-item="book" data-book="{{book}}" bindtap='tolookbook'>
+        <image wx:if='{{book.book_type == 1}}' src='{{book.book_cover}}' ></image>
+        <image wx:if='{{book.book_type == 2}}' src='{{ctxPath + book.book_cover}}'></image>
+        <label>{{book.book_name}}</label>
+      </view>
+    </view>
+  </view>
+  <view class='page-end'>已经到底了，到别的频道逛逛吧!</view>
+</view>

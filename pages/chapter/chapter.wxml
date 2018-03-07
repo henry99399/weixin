@@ -1,0 +1,19 @@
+<scroll-view style='height:100vh;' scroll-y="true" scroll-into-view="{{intoview}}">
+  <view class='chapter' wx:if="{{book_type == 2}}">
+    <view wx:for='{{chapters}}' wx:for-item='chapter'>
+      <text class='chapter-node {{"m"+chapter.id == intoview ? "selected" : ""}}' id="m{{chapter.id}}">{{chapter.name}}</text>
+      <view wx:if='chapter.child' wx:for="{{chapter.child}}" wx:for-item="node" class='node {{"m"+node.id == intoview ? "selected" : ""}}'>
+        <label id="m{{node.id}}">{{node.name}}</label>
+      </view>
+    </view>
+  </view>
+  <view class='chapter' wx:if="{{book_type == 1}}">
+    <view wx:for='{{chapters.chapters}}' wx:for-item='chapter'>
+      <text class='chapter-node {{"m"+chapter.ch_id == intoview ? "selected" : ""}}' id="m{{chapter.ch_id}}">
+      <text class='n'>{{chapter.ch_name}}</text>
+      <text class='p' wx:if="{{chapter.ch_vip == 1}}" style='color:#f63'>收费</text>
+      <text class='p' wx:if="{{chapter.ch_vip == 0}}" style='color:green'>免费</text>
+      </text>
+    </view>
+  </view>
+</scroll-view>

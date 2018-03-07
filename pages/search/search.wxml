@@ -1,0 +1,34 @@
+<view class="searchCenter">
+  <scroll-view style='height:100vh;' scroll-y bindscrolltolower='scrollLoad'>
+    <view class='searchForm'>
+      <input placeholder='请输入你想看的书名' bindblur='tochange' bindconfirm='tochange' focus='{{showFocus}}' bindfocus='onfocus' value='{{searchText}}'></input>
+      <button bindtap='loadList'>搜索</button>
+    </view>
+    <view class='searchKeys' wx:if="{{showFocus}}">
+      <label wx:for='{{searchKeys}}' wx:for-item='key' data-item='{{key}}' bindtap='toSearch'>{{key.name}}</label>
+    </view>
+
+    <view class='bookList' wx:if='{{!showFocus}}'>
+      <view class='searchTotal'>共找到{{total}}个结果</view>
+      <view wx:for='{{books}}' wx:for-item='book' class='bookInfo' data-book="{{book}}" bindtap='tolookbook'>
+        <view class='cover'><image src='{{book.book_cover}}'></image></view>
+        <view class='detail'>
+          <text class='book_name'>{{book.book_name}}</text>
+          <text class='book_remark'>{{book.book_remark}}</text>
+          <view class='tap'>
+            <text class='author'>{{book.book_author}}</text>
+            <text class='cat'>{{book.book_cat_name}}</text>
+          </view>
+        </view>
+      </view>
+      <view class='loading' wx:if="{{hasMore}}">
+        <text>玩命加载中...</text>
+      </view>
+      <view class='loading' wx:if="{{!hasMore}}">
+        <text>没有更多内容了!</text>
+      </view>
+    </view>
+  </scroll-view>
+
+
+</view>

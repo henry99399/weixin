@@ -1,0 +1,46 @@
+<scroll-view style='height:100vh' scroll-y="true" scroll-top="{{scrollTop}}">
+  <view class='head'>
+    <view class='cover'>
+      <image src='{{book_cover}}'></image>
+    </view>
+    <view class='detail' wx:if="{{book_type == 1 }}">
+      <view class='book_name'>{{book_name}}</view>
+      <view class='cat_name'>{{book_author}}</view>
+      <view class='cat_name'>{{book_catname_a}} | {{book_catname_b}}</view>
+      <view class='price'>{{word_size}}字</view>
+
+      <view class='price' wx:if="{{is_finish == 1}}">已完结</view>
+      <view class='price' wx:if="{{is_finish == 2}}">连载中</view>
+    </view>
+    <view class='detail' wx:if="{{book_type == 2 }}">
+      <view class='book_name'>{{book_name}}</view>
+      <view class='book_publisher'>{{book_publisher}}</view>
+      <view class='cat_name'>作者：{{book_author}}</view>
+      <view class='cat_name'>分类：{{book_cat_name}}</view>
+      <view class='price'>售价：{{price}}元</view>
+    </view>
+  </view>
+  <view class='actions'>
+    <button wx:if="{{shelf_id}}" class='end'>已在书架</button>
+    <button wx:if="{{!shelf_id}}" bindtap='addShelf'>加入书架</button>
+    <button bindtap='readBook'>开始阅读</button>
+  </view>
+  <view class='remark'>{{book_remark}}</view>
+  <view class='mulu'>
+    <text>共{{chapterCount}}章</text>
+
+    <text class='link' bindtap='lookChapter'>查看 ></text>
+  </view>
+  <view class='tj'>
+    <view class='title'>相关推荐</view>
+    <view class='tjList'>
+      <view class='book' wx:for="{{tjList}}" wx:for-item='book' data-book='{{book}}' bindtap='toloadAll'>
+        <view class='cover'>
+          <image src='{{ ctxPath + book.book_cover}}'></image>
+        </view>
+        <text>{{book.book_name}}</text>
+      </view>
+    </view>
+  </view>
+
+</scroll-view>

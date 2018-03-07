@@ -1,0 +1,41 @@
+.chapter{
+  padding: 20rpx;
+  box-sizing: border-box;
+}
+.chapter .chapter-node{
+  line-height: 3rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-bottom: 1px #eee dotted;
+  display: block;
+  width: 100%;
+  font-size: 0.9rem;
+}
+.node{
+  text-indent: 4em;
+  font-size: 0.8rem;
+  line-height: 3rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-bottom: 1px #eee dotted;
+  display: block;
+  width: 100%;
+}
+text.n{
+  float: left;
+  width: 80%;
+  border: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 0.9rem;
+}
+text.p{
+  float: right;
+  font-size: 0.8rem;
+}
+.selected{
+  background: #d5d8da;
+}

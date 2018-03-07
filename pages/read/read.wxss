@@ -1,0 +1,48 @@
+.day{
+  background: #f6f4ee;
+  color: #333;
+}
+.night{
+  background: #444444;
+  color: #937409;
+}
+.foot-bar{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+}
+.foot-bar.day{
+  background: #fff;
+  color: #666666;
+}
+.foot-bar.night{
+  background: #666;
+  color: #937409;
+}
+.foot-bar .node{
+  float: left;
+  width: 25%;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 0.8rem;
+  padding: 15rpx 0;
+}
+.foot-bar .node-bg{
+  display: block;
+  width: 3rem;
+  height: 3rem;
+  margin: 0 auto;
+}
+.foot-bar .ico{
+  float: left;
+  width: 100%;
+  height: 2rem;
+  background: #f90;
+}
+.foot-bar .node text{
+  float: left;
+  width: 100%;
+  height: 1rem;
+  line-height: 1rem;
+}

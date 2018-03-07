@@ -1,0 +1,98 @@
+.advSwiper{
+  width: 100%;
+  height: 40vw;
+}
+.advSwiper image{
+  width: 100%;
+  height: 40vw;
+}
+.menuAction{
+  padding: 20rpx 0 20rpx 0;
+  border-bottom: 10px #f5f8fa solid;
+  float: left;
+  width: 100%;
+}
+.menu-item{
+  float: left;
+  width: 20%;
+}
+.menu-item-label{
+  width: 10vw;
+  display: block;
+  margin: 0 auto;
+}
+.menu-item-label image{
+  float: left;
+  width: 10vw;
+  height: 10vw;
+}
+.menu-item-label label{
+  float: left;
+  width: 10vw;
+  text-align: center;
+  padding-top: 10rpx;
+  font-size: 0.8em;
+  height: 1em;
+  line-height: 1em;
+}
+
+.listModel{
+  float: left;
+  width: 100%;
+  box-sizing: border-box;
+  border-bottom: 10px #f5f8fa solid;
+}
+.listModel .modelTitle{
+  margin-bottom: 20rpx;
+  float: left;
+  width: 100%;
+  line-height: 1em;
+  box-sizing: border-box;
+  padding: 40rpx 30rpx 0 30rpx;
+}
+.listModel .modelTitle .link{
+  float: right;
+  color: #999;
+  font-size: 0.8em;
+}
+
+
+.modelbook{
+  float: left;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 10rpx;
+}
+.modelbook .book{
+  float: left;
+  width: 33.33%;
+  overflow: hidden;
+  padding: 20rpx 20rpx 40rpx 20rpx;
+  box-sizing: border-box;
+}
+.modelbook .book image{
+  float: left;
+  width: 100%;
+  height: 38vw;
+  box-shadow: 0 0 3px #ddd;
+}
+.modelbook .book label{
+  float: left;
+  width: 100%;
+  line-height: 1rem;
+  font-size: 0.8em;
+  height: 2rem;
+  overflow: hidden;
+  color: #787878;
+  margin-top: 10rpx;
+}
+
+.page-end{
+  text-align: center;
+  padding: 30rpx;
+  color: #999;
+  font-size: 0.8em;
+  float: left;
+  width: 100%;
+  box-sizing: border-box;
+}
